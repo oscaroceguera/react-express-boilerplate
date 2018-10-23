@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "start:dev": "nodemon server/server.js",
+    "test": "export NODE_ENV=test || SET NODE_ENV=test && mocha server/**/**/*.test.js --timeout 5000",
+    "test:watch": "nodemon --exec \"npm test\"",
+    "coverage": "jest --collectCoverageFrom=server/**.js --coverage server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "es6-requireindex": "^0.3.10",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.8",
+    "mongoose": "^5.3.6"
+  },
+  "devDependencies": {
+    "expect": "^23.6.0",
+    "jest": "^23.6.0",
+    "mocha": "^5.2.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.4",
+    "supertest": "^3.3.0"
+  }
+}
