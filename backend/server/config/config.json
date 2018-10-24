@@ -1,10 +1,10 @@
 {
   "test": {
     "PORT": 4000,
-    "MONGODB_URI": "mongodb://localhost:27017/PipelineTest"
+    "MONGODB_URI": "mongodb://localhost:27017/ExampleTest"
   },
   "development": {
     "PORT": 5000,
-    "MONGODB_URI": "mongodb://localhost:27017/Pipeline"
+    "MONGODB_URI": "mongodb://localhost:27017/Example"
   }
 }
