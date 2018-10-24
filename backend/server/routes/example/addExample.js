@@ -6,8 +6,6 @@ exports.default = async (req, res) => {
       name: 'Oscar Oceguera'
     })
 
-  console.log('ENTRAAAA')
-
     const doc = await example.save()
     console.log('doc => ', doc)
     res.send(doc)
